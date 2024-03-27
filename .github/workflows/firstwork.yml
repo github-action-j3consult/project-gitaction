@@ -16,7 +16,7 @@ jobs:
     parallel-jobs-on-macOs:
         runs-on: macos-latest
         steps:
-            - name: View SW Version
+            - name: View SW Version running
               run: sw_vers
     dependent-jobs:
         runs-on: windows-latest
@@ -24,4 +24,3 @@ jobs:
         steps:
             - name: echo string
               run: write-output "windows string"
-                                    
